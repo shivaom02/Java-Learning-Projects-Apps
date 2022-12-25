@@ -28,14 +28,12 @@ public class Store {
     // to string
     public String toString() {
         String temp = "";
-        temp += "\n******************************* MOVIE STORE *******************************\n\n";
 
         for (int i = 0; i < this.movies.length; i++) {
             if(this.movies[i] == null) continue;
 
             temp += this.movies[i].toString() + "\n";
         }
-
 
         return temp;
     }
